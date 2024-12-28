@@ -1,0 +1,6 @@
+*.png
+static/config.ini
+static/access_tokens.ini
+*.pyc
+*/__pycache__
+*.ipynb
