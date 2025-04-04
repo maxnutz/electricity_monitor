@@ -1,6 +1,6 @@
 """ Retrieves elctricity prices for today, evaluates and saves output to file """
 
-from utils.awattar_utils import Request
+from awattar_utils import Request
 import datetime as dt
 
 # get todays day
@@ -11,5 +11,5 @@ price_data.get_data_from_API()
 # get hours with minimal prices
 
 # plot prices
-price_data.plot()
+plotly_plot = price_data.plot()
 # save to file and plot
