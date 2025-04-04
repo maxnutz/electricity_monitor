@@ -1,5 +1,4 @@
 *.png
-.gitignore
 static_files
 static/access_tokens.ini
 .vscode

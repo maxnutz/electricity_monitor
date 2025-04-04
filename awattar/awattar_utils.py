@@ -63,8 +63,8 @@ class Request:
         red: price > 11
         """
         day_mean = self.df.marketprice.mean()
-        if row < 0:
-            return "dark_green"
+        if row <= 0:
+            return "olive"
         elif row > 0 and row < 11:
             if row < (day_mean - 0.1 * day_mean):
                 return "green"
@@ -81,6 +81,7 @@ class Request:
         elif row > 11:
             return "red"
         else:
+            print(row)
             raise ValueError("Algorithm for light evaluation failed")
 
     def evaluate_pricing(self):
