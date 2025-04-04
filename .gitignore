@@ -1,6 +1,11 @@
 *.png
-static/config.ini
+.gitignore
+static_files
 static/access_tokens.ini
+.vscode
 *.pyc
 */__pycache__
 *.ipynb
+output
+temp
+
